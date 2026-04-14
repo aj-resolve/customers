@@ -1,0 +1,362 @@
+[0:37] Lauren Phillips:
+Hello? Hello Lauren, can you hear me Okay?
+
+[0:53] Lauren Harden:
+Hi.
+
+[0:53] Lauren Phillips:
+Hi.
+
+[0:54] Lauren Harden:
+Hi.
+
+[1:00] Lauren Phillips:
+Hello Amanda.
+
+[1:03] Amanda Nichols:
+Hello.
+
+[1:11] Lauren Phillips:
+Okay, so Lauren, I know that we have several, I saw that several people were added to this. My team's gonna be joining in just a second. Do you mind giving kind of a overview of just generally like the roles where people are coming from? Is this all within DevOps or just lay of the land would be helpful?
+
+[1:33] Lauren Harden:
+Yeah, so Anthony is a senior infrastructure engineer and he was gonna be the one kind of primarily running this POC, kind of aligned to the day-to-day, you know, workings of it. And then Danny and Chad, the two that I added, they are both SREs and This essentially would help them with their job. Right. And so we wanted them to be part of it as well and ask questions and kind of just make sure that whatever we do for the POC is the right thing. And then I guess lastly, like Danny, Chad and Anthony, none of them have seen Resolve, right? They were not on the demo that we did at the beginning and it doesn't need to be today. But I did wanna ask if like we could schedule a time with them so they could see a demo or abbreviated one or something, just so that they had an idea at all E even what you guys do.
+
+[2:44] Lauren Phillips:
+Yeah, I think that we should actually just start with that. Okay. On the same page. And then Amanda, are you from the Griffon or the Resolve side? Yes. Yeah, yeah, yeah, yeah.
+
+[2:57] Amanda Nichols:
+Sorry, I'm new this week, so I'm ju or Almost just this week. So I'm shadowing I, I'm supposed to be in the same room as Prodo. Not sure where he is at at the moment, but I do get lost in this office so far.
+
+[3:07] Lauren Phillips:
+So All good. It was just double checking. Yeah, I just got off of a one-on-one with Prodo, so he should be on his way. Okay. But Lauren, for the, for this, I think that we should just start with kind of like a net new introduction for everybody's sake. Do you know where Chad, and I've already forgotten the, Well Danny and Anthony are here.
+
+[3:29] Lauren Harden:
+Chad is east coast and so I added him kind of last minute and I was like, if you can't join, I understand. So because it's like five 30 East Coast time.
+
+[3:40] Lauren Phillips:
+Yeah, Yeah, he's, he's trying to log off. I get it. I live in San Diego so we have, we have hard stops at five 30. Okay, cool. Well proton just to catch you up, obviously I've met with Lauren previously and she's kind of spearheaded connecting us to the rest of the team, but Anthony will be leading the POC and then Danny and soon to be involved. Chad are from the SRE side. So I was thinking we could actually just start over a little bit with doing some high level like we un like just to provide context for everyone. Like in previous discussions with Lauren and Andrew we had discussed how you guys have a lot of tools, a lot of tools, people are jumping between several things and if there's any way to add more efficiencies and productivity to that to make your lives easier seemed like a really interesting thing to evaluate. So that's kind of the only context we have. You haven't missed a ton of meetings meeting, we can definitely kind of start over from here, but Lauren, I don't know if I summarized that well enough or if you have anything you wanna add for, you know, why now and why this is the right time.
+
+[4:45] Lauren Harden:
+Yeah, the only thing else I'll add is that I think when, when I see Syn just joined, so just real quick, he leads the DevOps team and SRE so they kind of all report up to him. So just wanted to say that. But then also like we do have a lot of incidents and so it would be interesting how we could leverage your product to improve our, you know, resolution times finding problems. Oh ook, you're Chad. Yeah, there you're, it's still logging Chinook's name. Okay.
+
+[5:20] Sunuk Kim:
+It's still logging me into ook.
+
+[5:22] Lauren Harden:
+Okay. This is Chad guys not ook.
+
+[5:25] Lauren Phillips:
+Okay. Hi Chad. Hello. So yeah, Perfect. Well that's helpful context just from our side. So for folks that haven't met me yet, my name's Lauren Phillips. Feel free to call me LP since I know that we have multiple Laurens here. Everyone in our office calls me LP so you're welcome to as well. But I joined Resolve about seven months ago. I came from Grafana Labs where I spent the last five years working in observability. So you're gonna see a lot of similarities to like the outputs that are gonna resonate a lot with your SRA jobs and all of the observability tools and outputs of those observability tools like better MTTR and productivity and visibility. But what I think is really interesting that Resolve is doing is actually solving that problem a little closer to the people because as a multi-agent tool, we're actually gonna be able to eliminate all of the toil you have to go through to access those various different platforms to get the right information. So we can definitely introduce you to that in a couple of slides and then give you a quick demo and then we can also wrap up by identifying what are maybe two or three key use cases that you'd like to use in A POC with us and then we can dive into the details of that afterwards. Peran, do you wanna introduce yourself though?
+
+[6:39] Prodan Statev:
+Sure. My name is Peran. I am one of the solutions engineers here at Resolve. Before this I worked on databases at Snowflake and then LM evaluations at a startup called braintrust. So very excited to meet all of you and to show you a demo and then talk about the POC and how we can test out Resolve.
+
+[7:00] Lauren Phillips:
+Cool. And I know that we kind of introduced you guys for yourselves, but if there's anything that you guys are particularly interested in learning or that you have questions over ahead of time, feel free to flag those for us. Chad, Danny, Anthony, even Lauren? Nope. Alright, well we can just kind of jump into it. I know my part's the less entertaining part since it's kind of the context of who we are and how we got here, but I promise it is helpful background information. So I am not the only person who comes from the observability space. There's kind of two classes of folks that you can imagine are in Resolve. We have the seasoned veterans of the observability world who said, Hey, we have created a lot for people who act, who actually have to absorb our tools and we wanna make that better. And then we have the entire AI kind of lab oriented side where we've brought folks over from DeepMind and Meta and Gemini who are helping build such a sophisticated platform for solving these types of problems. Obviously a lot of validation from the space, both in who our customers are and also who's invested in us, but also just the caliber of talent. And I'm sure that you know, as you guys get into A POC and start working with us, we'd love to introduce you to our product team. You know, we're definitely not too big for our bridges at this point in time. We're always looking to be design partners with people in any way or shape or form. But kind of moving into like why we created this AI for production space and how this AI for SRE use case became so valuable is that basically looking into what it takes to run production, it goes far beyond just telemetry, right? Actually effectively doing that reliability engineering role leverages tons of tools and sometimes in separate areas of domain like code or infrastructure. And oftentimes you are escalating to different people who may have more context over a given service than you do. And so if there was a way for us to apply some type of AI agent into the middle of all of that noise, we wanted to try to solve for a lot of the different problems that not only feel in the SRE org, but also that the engineers on the other side feel either they're being escalated to or they're having to escalate to SES depending on how your org is set up. We also see this being really beneficial for leadership teams because in any time that you're trying to capacity plan or cost optimize or you know, bring new folks into your team, there's a lot of tribal knowledge that gets locked away in ivory towers. And we're trying to also eliminate all of that gap in context so that everyone can essentially self-service themselves inside of their environment. So what you can expect is that what Resolve is is again, it's a MultiGen system that's going to combine all the expert expertise from your team. It's gonna understand, operate all of your tools for you, and then it's gonna piece it all together very intelligently to be able to traverse your production environment the same way any of your humans would. Now, we'll show you what this actually looks like in action, but just for a little bit of confidence boost, we are doing this in production with really interesting organizations like Coinbase, several others, and really in more regulated environments around finance and healthcare and e-commerce and software. And the reason why we're being trusted at such an early stage of our company is because what we've built is very uniquely sophisticated. It's meant for the enterprise size of scale and scope. So if you think about all of the different facets that go into doing our job, we have created a specialized subagent for that role. So if you think about querying Grafana or Prometheus for example, there is a particular agent that is an expert in doing that and writing better queries and maybe somebody who's brand new to the tool suite. Same goes for traversing dashboards, understanding code, reviewing any existing Confluence or notion pages that you may have access to and then actually intelligently deciding like what rabbit hole do I go down so that your team essentially gets pinged, comes online and sees exactly where you should start or what avenues have already been explored that you don't need to go down. Does that make sense? A lot of information thrown at you in like two minutes. Any questions?
+
+[11:16] Prodan Statev:
+Okay, cool.
+
+[11:17] Lauren Phillips:
+So Proton will show you what this actually looks like. I do just wanna clarify that in A POC, in order to get it to the level of efficacy that you're gonna see in a demo, there's a bit of an iterative process. Now this is the same as onboarding a new SRE onto your team. So if you can think of it as, let's think of the different types of use cases that you guys particularly struggle with, whether that's noisy alerts or bespoke incidents or you know, having to tap on one particular team for their service knowledge. What we're gonna do is run a recent alert or investigation that was similar to this and after we get the wrong answer, which is expected from Resolve, we will actually lean on your team to then fill in those gaps. And as it starts to learn best practices, you'll start to see that the quality and accuracy of resolve trends upwards in just the two to three week timeline, which then continues for the months after as well when you guys, if you guys come on as customers. Does that make sense though it's not too different from any other AI tools if you've trained those, do you guys have experience with like Claude or Cursor Anthony saying it. Okay, cool. All right, so fairly familiar concepts but just wanted to preface with that. Pradan, do you wanna show the magic?
+
+[12:34] Prodan Statev:
+Yeah, of course. And I'll show you brief demo here. It's gonna be in our demo environment. So it's, it's not gonna be, it's not gonna be fully relevant to what you're doing, but then I want to hand it over to you and then maybe we can do a reverse demo where you walk, you walk us through one of your recent incidents alerts and maybe Danny Chad, maybe you can walk us through that and what it looked like where you went and then we can talk more about that on the Resolve site, how we can do that. And it's gonna help us also decide what we want demo or what we want to test as well. Okay, so let me start, where do you have Slack? Do you have Slack channel with all of your alerts coming in? Okay, great. Let, and maybe you've seen this already, so that's why I wanna also be fairly brief here. You have Slack channel, all your alerts are coming in, maybe the alerts look like this where it's not very clear what is what they're about. Maybe some of them are noisy, maybe some of them are real, maybe some of them you, you know, to ignore as they're coming in Resolve gets triggered and auto investigates them and it tries to get to find out what might be going wrong. So within a few minutes of this alert firing, in this case it's some consumer lag that's high resolve comes in here and it will give you an overview of what this alert is about, whether it's noisy or not, what it is, what it's saying, what the impact is, what the metric behavior is, what are the historical patterns. And then it'll give you a theory with a confidence interval of how, of what resolved things, the root causes. And then it'll also give you all of its findings. How does it know to claim that this alert is, in this case it says that alert is chaos engineering scenario. Well it resolve is figuring out that it's a network environment basically. So in this case, how does it know that? Well here's all the findings and also there is these stars next to each finding, which if I click resolve will tell me exactly where it is getting that information. So for example, if we look at this specific one, resolve is saying the consumer lag started accumulating around this time at 50 seconds and that escalated to 770 seconds. By this time, how does it know that if I click here, I'll go in the web UI and I'll see where that's coming from. Resolve also is telling me that this is a noisy alert, right? Somewhere in here it said like it's five 12 times in the past seven days and it, it's, it's this resolve has decided that based on the metric behavior, this is a noisy alert. So it, I can just silence it right from here. But I can also ask follow up questions here. So I can say for example was their customer impact from this and then resolve, we use all of the context that it already has here from from this investigation. It will then decide whether it can just quickly answer this or if it needs to go and get and do more work and do extra work in order to to answer this. The sources that Resolve is going to for, for all of this are your metrics, your logs, your traces, if they exist, your code and runbooks that exist though we don't expect they will or that they will be up to date. And the infrastructure as well that these applications sit on. Well in this case it's A AWS managed infrastructure so we're probably not, there is not that much interesting there to go on though. We will also check if the region maybe is down if the AWS region is down, in which case we'll tell you that's the case. Okay. I wanna now show you all of how this works and what Resolve is doing in the backend to actually make these claims. Before I do that, what questions do you have for me based on this? Okay, so no, I have a question.
+
+[16:39] Anthony Yi:
+I'm sorry, I was trying to unmute.
+
+[16:41] Lauren Harden:
+Oh yeah, same. Go Ahead Anthony.
+
+[16:43] Anthony Yi:
+I via Google. So I guess I heard, and you kind of answered that, so I guess the resolve automatically is aware of like data center or something that isn't related to our metrics to kind of assess and give us some insight dramatically.
+
+[17:02] Prodan Statev:
+If the question is, if Resolve is, is aware of these metrics and even if they're not your own metrics, is that what you're asking? Right? Yeah, yeah, yeah.
+
+[17:10] Anthony Yi:
+So like a data center related, you know that's right IP related. Okay, cool.
+
+[17:14] Prodan Statev:
+Yep, Exactly.
+
+[17:15] Anthony Yi:
+And Second question, those timestamps, I mean I imagine those are sent to you from Resolve, so is that specific time zone In this case these are time zone timestamps?
+
+[17:29] Prodan Statev:
+Yes.
+
+[17:30] Anthony Yi:
+Okay.
+
+[17:31] Prodan Statev:
+We can edit that as well so that it's UDC or whatever else you prefer.
+
+[17:35] Anthony Yi:
+Okay. But it's like since it's coming from Resolve to our Slack, I imagine it's a set time. Like I can't be on Eastern time and Chad is on Western time, right?
+
+[17:46] Prodan Statev:
+Like Right, right.
+
+[17:47] Anthony Yi:
+Okay.
+
+[17:48] Prodan Statev:
+If so in Slack that's the case, right? We obviously have to put in only one, but when you go to resolve the timestamps, there will will be, well it depends. So the timestamps of the alert in this case it's, let's see, consumer error session timeout followed by these errors starting at this is most likely coming from the logs themselves, right? So it'll be the timestamp of those logs. But if you go to resolve in the UI and you say, Hey, what happened today at 8:00 PM and you don't see a time zone it, we will use your local time.
+
+[18:25] Anthony Yi:
+So, Okay, good to know. Thank you.
+
+[18:29] Lauren Harden:
+Any, I think Lauren, you also were unmuting, well I might be getting ahead of the demo, but I'm curious like let's say that this alert fired and Danny went to look at it and he was like, that's a, that's a production outage. Like we need to start a call. Can you start that from here or like connect and start an incident and resolve?
+
+[18:56] Prodan Statev:
+Yeah. Yes, the answer is the concept of an incident or let take a step back, resolve treats every alert as if it is an incident, right? It doesn't, it's not going to just say, oh well I'm gonna be lazy here and and not investigate fully because I don't think this is real. So it will try to get to the root cause for all of these even before you declare an incident. Right. But resolve will also, I'm assuming you create your own Slack channels for every incident, right?
+
+[19:27] Lauren Harden:
+It's the same Slack channel and it's like different threads for each different Incident, different thread. Yeah. Right.
+
+[19:33] Prodan Statev:
+So Resolve can be added to that Slack channel and then it can, you can add it to, or you can ask it in every thread or actually resolve will order respond to every thread and say here's what I think the root cause is, right? We can't yet start them, right, we can't escalate and you know, page someone and say resolve I'm, I'm creating a incident channel here and you know, I'm, I'm gonna you know, create the war room but we can do everything else, right? We can be added automatically to the war room or to the thread and then for each alert that comes in, we will always do this sort of root cause analysis to try to get to the root cause.
+
+[20:12] Lauren Harden:
+Okay.
+
+[20:13] Anthony Yi:
+I guess going to a little bit, a little bit specific to the Slack integration. So the Resolve app, the bot actually responding to the event that's sent on that channel?
+
+[20:26] Prodan Statev:
+Yes.
+
+[20:27] Anthony Yi:
+Or Oh okay. Or or what what's the, You say since the data is all on your end and you're already processing them, like you don't need to wait for the event in Slack to trigger something to do action, right?
+
+[20:43] Prodan Statev:
+Like Oh I see. Yeah.
+
+[20:45] Anthony Yi:
+Like You and does the event saying there is an alert so why use Slack's event to do the flow, right?
+
+[20:51] Prodan Statev:
+Like but and That's, that's a good question. That's a smart observation. We don't wait for the Slack events. Okay. We Get triggered based on the alert event. Yeah that's a good point in in Slack we wait for the Slack message so that we can match, we already have investigated to this.
+
+[21:08] Sunuk Kim:
+Gotcha, gotcha. Yeah.
+
+[21:10] Anthony Yi:
+Okay.
+
+[21:11] Prodan Statev:
+And you can, and I actually, sorry I forgot that I asked something here but I asked if there's consumer impact or customer impact like five minutes ago and then resolved within the same minute responded you know, customer impact assessment, there's limited direct customer impact, the alert only affects this specific service which is a calf consumer message. Here's what was affected, here's the important context, this is an expected behavior because this is triggered by an intentional chaos engineering scenario and then a bunch more information and and recommendations as well. I can take action from here. So let's say that I can say to, well I dunno if I should do this, but I can say create a PR that removes this Engineering And then resolve will go into the code, see how we write our prs and it'll create that for me and then I can just click here and merge that pr.
+
+[22:17] Anthony Yi:
+Another follow up question for you. How big of the data in this demo when you asked to analyze customer impact, like how big of a size are we talking How many logs and metrics we looked at Overall? Like log size gigs, terabytes, It's gonna be terabytes. Yeah, This is, and that was the demo and then responded back within a minute to accept that.
+
+[22:44] Prodan Statev:
+Okay, So I don't wanna promise a minute, right? 'cause it's sometimes it, it's going to depend on what treat resolve as a very literal engineer that just joined the team, but they're like a very literal engineer. So if you tell that literal engineer what is the customer impact and previously you have not given that engineer any guidance on where to go and then check, check customer impact, what is, you know, there isn't one dashboard that just says customer impact, right? You have to go in and probably do some correlations. Well if this is the first time you're giving that engineer that task, that engineer's gonna spend more time because they're gonna be like, well okay I have to go in, maybe there's some databases that say what the impact or what customers are doing. I need to look at what's normal, I need to check what happened here. So there's a lot more work they have to do as that engineer is getting onboarded. As you give them a little guidance as they're learning they will have to do less and less work, right? So for an investigation maybe we spend to get to the, all the way to the root cause maybe we spend 15 minutes because we're investigating so many different things and maybe we spend only a few minutes because we actually know what to do.
+
+[23:56] Lauren Phillips:
+And I will just say like in general, I always think of PSEs as kind of like a warmup to production. It's a really great way to get a head start with all of our resources before doing like full blown like this is what real life would look like. Because in so many ways we are training and teaching resolve exactly what you would want it to do in a non, you know, scoped down scenario. But for the sake of time, proton. So we only have like about 20 minutes left, can we move into the UI and just show them a little bit more on that? And then what we can do, since I don't, you know, I wanna give you enough time to think hard on the right types of use cases, we can actually set up a second call where we do we kind of like cherry pick, like what specific alerts and investigations do we wanna pick? And then we can maybe if we have time after this piece, we can do a reverse demo to help guide you on that and then you'll have a little bit of homework to come back to us with. Does that sound fair? Okay, cool.
+
+[24:51] Lauren Harden:
+Yeah because I think, I think we might have a little bit of a legal challenge depending on what all we might want to connect or not connect. We might need to be strategic about what we choose to do because if we're gonna connect to certain things our legal team is gonna require like signed papers between us, which we don't have right now. Like an NDA is not enough, it's basically what I'm saying.
+
+[25:17] Lauren Phillips:
+Saying yeah. Yeah Course that's super standard for us actually because of the nature of the work. So what I'm typically used to saying is that security wants to do a complete review as if this was moving into production and there's typically a DPA associated with that. So I started connected Slack channel so that we can all chitchat just more immediately. Lauren, if you don't mind, we can kind of take that offline and I'll Okay, yeah, read there. Perfect.
+
+[25:42] Prodan Statev:
+I would say, just to answer that que or it's not a question, but to give maybe a little bit of color of what we see, there's things that we, it, it's, again think of resolve as resolve is this really smart combination of many AI agents, but they do need the, the, the data to be able to answer the questions that you're giving them, right? So, and that data typically is logs, metrics, traces and code and something we install in one of your Kubernetes clusters. So that it's, it, we can talk about the reasons why we install that, but that those are typically the, the building blocks of what we need. 'cause otherwise there's no way that we can investigate. Like it's what you use when you go on call probably I, you don't imagine if you didn't have one of these legs of the stool. So that's typically what we ask for in terms of access. We don't store any of the data on our end, we don't take any data beforehand. We only use what we need when we get triggered when this alert comes in, resolve the sites I need to go in, I need to query the logs, I need to query the metrics and then we take that data at that time only the data we need and then send it to our, to our cloud to to process. Okay, let me show you here real quick. The, what we saw in, in, in Slack here is this alert, right? This alert comes in resolve posts about what, what it finds. I'm asking some questions like here's the PR that I was asking about. Okay, so how did Resolve do this? If I go in the web UI you will see pretty similar view but a lot more wordy in some ways. Or actually I dunno if it's a lot more wordy, but it's differently wordy, right? And, and we're optimizing for a different thing because when you're in Slack you just want very quickly an AI to tell you what is this about? Is this real or not? How do I solve or how do I fix it, right? And then you can ask follow up questions and that's it. But in the ui, if you're coming to the UI, you probably wanna understand how resolve is working, where did it go, you want to check a little bit of its homework and, and its work. So this is that same alert that fired and then here resolve is again telling us what happened. It's going to show us all the dashboards and and metrics that it looked at. In this case, this is a actually a metric it, it wrote this, this query itself, right? And then it plotted that data in order to actually visually see the increasing data. So Resolve has these visual capabilities as well. I can ask follow up question follow up questions here and then resolve will then respond based on the information that it has. And I can also tag people here. I can say, for example, Lauren lp, can you take a look at this? And then she will now get a Slack message and an email with this specific link. And then if you, if she responds to anything here, everybody can see it. So it's kinda like a Google doc as well Resolve will also show you all of the evidence of the things that it's claiming. So in this case it claims that the, how does it know that this is intentional chaos engineering? Well it looked into the code and here's a specific code, here's a specific source file, here's the actual file and the actual repo that it's looking at to make this claim. And then the last thing I wanna mention is that if I click here on the left hand side, this I expand thread button and if I click on the investigation itself, you can see all of the thinking that our many, many agents are doing to get to this conclusion, right? This is, it's, it's a resolve is unlike Chad GBT or Claude where you ask a question and then a response comes back, right? A resolve is actually multiple agents that are working in concert to try to figure out what's going on and you can see all of their thinking here. Like it's, you know, resolve things. The scheduled chron credential rotation job ran 16 minutes before the alert that closely aligns with this authentication error and then it decides that it needs to create the dashboards to see the consumer lag to assess the service health itself. Then based on those it'll go and look at the logs and based on those it might go back to the dashboards and so forth. And it does that all autonomously. Within those first few minutes you can also see all the things I asked. So in this case, if I asked in Slack it will show up here as well. I asked about the, the the, the customer impact and then you can further see how Resolve is making the claims that it's claiming and and how it's working. And then finally ask for the PR here so you can see the PR as well and I can just create it from here. Sorry, earlier you said that it merges the pr, it just creates the pr, it doesn't actually merge yet. Okay, this is my brief or not so brief demo. I know we have about 50 minutes left so I want to talk a little bit more about your use cases that come to mind and what you did in the past. Maybe if you go back to the past time you had an incident, what, what did that look like? Where did you go? Which sources, what was the experience like?
+
+[31:00] Anthony Yi:
+I know we had an incident this weekend. I don't know.
+
+[31:03] Sunuk Kim:
+Well it was a very Bespoke incident though, so Maybe if I can try to guide us.
+
+[31:09] Lauren Phillips:
+It's, we wanna try to find the use cases for the POC that are gonna be the most immediately impactful, right? So when we think about the fact that Lauren and is gonna go back with Andrew and they're gonna say okay like let's justify an investment of your time. What would be those downstream impacting workflows that are particularly painful? Whether that's because it's time consuming or if it's because it's distracting, which I realize sometimes feel like the same things, but just to give some examples of what folks come to us with. Sometimes it's because it's a signal to noise problem being able to triage to the right team very quickly. You know, bespoke incidents are obviously something we can do, but we often find that there's, there's probably some quicker wins that we could try to demonstrate in the POC and then work up to bespoke incidents with you.
+
+[32:01] Lauren Harden:
+So Anthony, I'm kind of thinking of the payroll incident from last week that okay kind of took three days or so to really figure out what the actual problem was and then get a code fix in. I'm wondering if something like that would be a good example.
+
+[32:24] Anthony Yi:
+Yeah, we should have all the metrics to provide once the legals and all that is done. So that would be a good example because we have a good idea as what path we took to understand try that that didn't solve it, we took another path, it didn't solve that and then finally we figured it out and that solved it. So that could be a good example since now we know all the moving parts we can kind of send you all the data for that and see how resolve could kind of give us that same output or different output.
+
+[32:57] Lauren Phillips:
+Yeah, I mean I think that's perfect because really what you're, what I'm hearing is just that there's a lot of rabbit holes, people going down the wrong rabbit hole, wasting time on that. And if there was an AI tool that was able to very quickly tell you exactly where to start or solve it for you, that would save how much time in this situation?
+
+[33:16] Anthony Yi:
+Yeah, it literally took three days plus. So yeah, three Days plus.
+
+[33:19] Lauren Phillips:
+Okay. Yeah I think that's a great example.
+
+[33:22] Prodan Statev:
+Why did it take three days?
+
+[33:25] Anthony Yi:
+Oh boy, Do you wanna walk us through it even and kind of talk about like, So I'm coming from the operational perspective but the lot of the investigation was done from the development side of the organization and personally I didn't, I think they do the scope of their change and they're also trying to understand what that, what they changed caused this. So it was lot of that discovery on within the team and within the infrastructure was like a one grouping problem. But that wasn't the silver bullet, it was just kind of, you know, something else. So just lot of trial errors and that kind of too where they finally asked Claw, you know, all the, and here's here's and that's kind of what led to it actually I take that back, it was a database metric showed them it was a, within certain process it had a long running query of Postgres. Yeah. And then they that and it went to the code. Yeah, go ahead.
+
+[34:36] Lauren Phillips:
+A little bit more of like an operational question around that like when an alert fires, is the SE team getting it first and then going to you know, the respective orgs that may or may not have been the cause or is it the opposite and ES are actually the escalation point if people can't solve their own problems?
+
+[34:55] Lauren Harden:
+It's both.
+
+[34:55] Sunuk Kim:
+Yes.
+
+[34:57] Lauren Phillips:
+Okay.
+
+[35:00] Anthony Yi:
+I think a payroll team is unique. They tend to do themselves first and then they reach out to the operational team. But everybody out your is the other way around.
+
+[35:11] Danny:
+Generally all alerts come to the SREs first.
+
+[35:14] Sunuk Kim:
+Okay.
+
+[35:15] Lauren Phillips:
+We take a Take a first pass and then yeah So if the other teams kind of self-serve and then escalate to you guys, are there any, because I think that's a great use case, especially if payroll is a little unique. Are there any other teams that we won't tell them but are problem children for you that perhaps seem to always be escalating to you, reallocating your focus?
+
+[35:43] Anthony Yi:
+We used to get calls in regards to like Kabi and the FTP stuff.
+
+[35:50] Danny:
+I dunno how Yeah, we Have like that for sure. I mean we have, we have, see we have pretty good runbooks. That's the problem with most of our incidents is that they are all bespoke or all it's like unique. Like this thing with payroll never happened before which is why it was an incident. But we have pretty good like, you know, RCAs to prevent a lot of stuff from happening. So we haven't had that happen before. So that's one of the concerns I have is sort of like digging through the logs to figure out like what I did happen this time. This one? Yeah the payroll one they had to go pretty deep on but generally yeah the Chad and I get alerted first and then we either fix it or escalate to everybody else or see that, you know, some issue is brewing and so basically yeah, calling the troops That makes sense.
+
+[36:42] Sunuk Kim:
+So we might have another one too, but it's not truly an incident because we've never actually declared an incident for it. But it is a recurring problem but we know how to fix it so as soon as the alert fires we can kick off the job to fix it and prevent it from becoming an incident. But we've not been able to get to that root cause yet. We have a Tomcat or Java based application that runs in a Kubernetes pod that occasionally will just stop listening, it'll just go its own way, do its own thing. We don't know yet what's happening to it. So we're trying to get to the end of that. But maybe if we could feed logs and stuff in and metrics and look at it that way. I mean 'cause from the metrics side everything looks fine but don't know if that's one that could be considered as well. Right.
+
+[37:31] Prodan Statev:
+And just maybe to understand the, what the alert volume and incident volume looks like at the whole company.
+
+[37:38] Danny:
+You have metrics One week, one a week, One a week, One incident or one not one alert, One Incident, one incident, one incident per week. Yes.
+
+[37:46] Sunuk Kim:
+Okay.
+
+[37:47] Danny:
+We probably get to, yeah, Go ahead.
+
+[37:49] Lauren Phillips:
+P zero P one incident or just in general. Okay.
+
+[37:53] Danny:
+Yes, customers complaining, that kind of thing. Slowness or whatever. Some, some process is not working as promised.
+
+[38:01] Prodan Statev:
+I see.
+
+[38:01] Lauren Phillips:
+Got it.
+
+[38:03] Prodan Statev:
+And what about alerts?
+
+[38:08] Danny:
+We get a lot more alerts. We get a lot of like operational alerts, like we get some disc space stuff and just like little level stuff. We also get the alerts that say, hey SQL is responding slower, we have an excess number of errors in engine X. Like let's start taking a look at that and then we'll find out that like, hey, it's not going away and like, you know, gee there was a deploy last night and like I had 50 years per minute yesterday and today I have 500 years per minute. And so we dig into stuff like that. Yeah, sometimes there's no change that we're aware of and the same thing happens. So that's the problem is like, and you know it's the AI stuff I guess could be helpful but like our logs are not ordered, they're not all the same. Right? Like different, we have 50 different microservices and everybody logs different stuff in different places in different ways. So there's not like a log level field across all of our logs basically. Like you can't look for just error in one field because it's scattered in different places. That's, so those are challenges as well.
+
+[39:13] Sunuk Kim:
+And to add to the challenge that Danny mentioned and to pin on something Anthony said is time zones aren't consistent either. So could it figure out that, you know, this log writing in UTC student, it needs to look at this time in EEST versus PST or whatever.
+
+[39:29] Prodan Statev:
+Yeah, we'll have to tell it once but then it'll remember it and and and it's, it's able to generalize, right? You, you, you don't have to say for every single microservice here is like, you know, this micro, this I'M zone or yeah. So that those are good use cases to test out.
+
+[39:47] Anthony Yi:
+So if I could More, so Danny mentioned alerts from the operations side of it, but application themself also has alerts and like as the example expansion team, they use a product called rollbar. Those and alerts on just, and those are the apps more friendly and whether the developers actually review them. Correct. That's unknown. But those alerts I think happen probably between 20 to fifties per day and we just, just I see.
+
+[40:30] Prodan Statev:
+And the application teams are, they're not responsible for those alerts. It's still you first that gets them.
+
+[40:41] Anthony Yi:
+They're supposed to be responsible, Right?
+
+[40:44] Danny:
+Yeah.
+
+[40:45] Prodan Statev:
+Well what they ends up happen, they Don't respond.
+
+[40:47] Anthony Yi:
+Yeah, I mean unless it's customer impacted, which then gets escalated to the operational to kind of support it could just be feature but If it, okay, okay, got it.
+
+[41:01] Prodan Statev:
+So I'm hearing a few different things. So there's the operational ones, there's actual incidents, there's application ones, there is ones based on like change or deployment. There's ones where there is no change and still something's going wrong of those. I mean personally I would love to test all of that one resolved, but we have like two weeks and probably you guys will will kill me if you try, if we try all of them. So what are the ones that are actually like the most customer and business impactful and right now are causing the most challenges and pain to you?
+
+[41:40] Danny:
+Yeah, it's different every week, right? Yeah, it's different every day.
+
+[41:42] Prodan Statev:
+Like I said, it's like we never know what's gonna happen day to day and like, like for these incidents that we're seriously, we're having one a week and it's a different team every week, But it's the, the incident is there, maybe there is no, but is there, if we had to, like if we're doing our yearly review and we look back at the incidents of the year, are these incidents based on new deployment? Is it infrastructure, is it something else?
+
+[42:07] Danny:
+Yeah, you could call it bugging a code. It's like bugging code kind of stuff.
+
+[42:10] Lauren Harden:
+They're almost all some type of change induced incident. Whether it was a bug, the deploy itself, a configuration mishap, like it's some type of change is occurring that causes the impact.
+
+[42:27] Danny:
+Right.
+
+[42:27] Prodan Statev:
+And they're mostly changes to the different teams applications or is that not Yeah, yeah.
+
+[42:35] Danny:
+Like one Microsoft, one microservice doesn't play well with another microservice like hey we added this config and like, oh we didn't know we were gonna break your config And you have to go and figure out what the microservices are doing and what the team did and they're not responding. Yeah, Partly, I mean, and that that comes down to it like as they get into it, they're sort of like, you know, they'll bring in some other team and some other team will be like, oh we expect a different value in that field than the one you just changed. And so I see.
+
+[43:03] Prodan Statev:
+Okay.
+
+[43:04] Lauren Phillips:
+Makes sense.
+
+[43:04] Prodan Statev:
+And one on week, I mean that I have teams that are fantastic, Rodan, it's fantastic.
+
+[43:12] Lauren Phillips:
+I guess we just is Consistency, like code changes happen on Friday and you always wake up Monday morning to a cluster or anything like that?
+
+[43:20] Danny:
+Oh, It's a cluster.
+
+[43:21] Lauren Harden:
+We, We don't allow code changes on Friday.
+
+[43:23] Prodan Statev:
+Yeah, No But come on.
+
+[43:26] Lauren Harden:
+But yeah, it, we do have, we, we do kind of have a set schedule for like most application changes but it, we basically deploy Monday through Thursday something. Okay. Somewhere it, there's changes going out every day except for Friday and the weekend.
+
+[43:43] Lauren Phillips:
+Well I think this gives you guys some good homework. So in the last two minutes I will meet you in Slack to schedule the next call because I think we need at least 45 minutes as a follow up. Please come into that call with kind of like a prioritized list of those use cases. If you, I know that's hard because it's, you're getting everything at once, but if you could try to say like, hey, like if I had to pitch this to our CTO for example, what do you think they would be focused on as far as like a problem that seems to be resonating or a group that seemed to have consistent issues. So getting visibility into like that priority list and then also being able to have you show us what it looked like to troubleshoot. That will be really helpful for us to get a read on integrations tribal knowledge that you may not realize is tribal knowledge. So that 45 minutes will be far more you guys presenting to us and us moderating, but I think that that is kind of the only next step we need to order or put together a PSE plan essentially. Okay.
+
+[44:45] Prodan Statev:
+And to be sorry for interrupting, but to be clear on the, maybe like the, how the POCs usually go is we decide on usually an application team that we're gonna focus on. Sounds like payroll might be one of them. We decide on, there's a few alerts that we should start with. We could do incidents as well and back test them. We can talk about that next time of how we wanna start. But there has to be something that's triggering resolve right during those, the POC period. So that's why if you have, when we're choosing the team, it's usually good to choose the team that has a few alerts and then during that POC we are just seeing how RESOLVE is performing, right? We're asking it questions, we're asking, go investigate this, look at what happened here, what is in the last release, right? Is there something in the last release in the PRS there that could be causing the problem that I'm seeing? And then we read through what Resolve is doing, we then see how it's, it's failing. Like what, what is the context that it's missing? We add that context and then we rerun it and that teach, we're teaching resolve, we're giving a context, we're making it better. And you're also seeing what that process looks like. So kind of both testing and improving at the same time. And it is helpful, I mean if maybe you all know for those incidents, what is the actual resolution and how did the incident progress? Sounds like you do, but sometimes we need the application teams as well. So we should think about who's gonna be in this POC if, you know, end to end and if here's how the incident started, here's how it was, here's how we found out what the root cause is, that's great. But then sometimes we might need someone else in the room as well that that can give us all that.
+
+[46:30] Lauren Phillips:
+Okay, Perfect. I know that you said you wanted to do a POC decision by the end of April. Is that, is that timeline coming from anywhere particular or is this just when your team does have the bandwidth to do it?
+
+[46:44] Lauren Harden:
+It's, it's because we've allocated time. Okay. That that's really the only thing.
+
+[46:51] Lauren Phillips:
+Okay. Do you have an idea of when you would want to actually make a commercial decision on this?
+
+[46:57] Lauren Harden:
+No. Okay. I don't, I don't know. That's okay.
+
+[47:01] Lauren Phillips:
+Well I'm, depending on how fast you guys wanna move, we can meet on Wednesday. If not, we can look for something next week. Also, proton could probably take that call without me, but I'm out of office Thursday and Friday. But I just wanted to flag that. So I will find you in Slack. I'll send a little bit of a recap for you in this recording if that's interesting. And then we can start planning.
+
+[47:23] Lauren Harden:
+Okay, sounds good. Okay.
+
+[47:24] Lauren Phillips:
+Thanks guys.

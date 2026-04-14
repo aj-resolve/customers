@@ -1,0 +1,332 @@
+[0:02] Michael Wilde:
+And then is Sean not in yet? So you got, this is your first, is your first, like first week?
+
+[0:11] Amanda Nichols:
+Yes. I am here to shadow, not to contribute.
+
+[0:15] Michael Wilde:
+I'm here to back up. I don't know. We'll see where it goes, but Hey, Remington and Sean, there we are. We in.
+
+[0:29] Rajendra Upadhya:
+Hey, good morning guys.
+
+[0:32] Michael Wilde:
+Let's go admit them all, put them all in.
+
+[0:35] Rajendra Upadhya:
+Good morning, Good morning. Are you recording this session? Is that a way I can get a recording?
+
+[0:47] Michael Wilde:
+Uh, did you want a recording?
+
+[0:48] Rajendra Upadhya:
+Yeah, I would love to have it because, uh, I was expecting Subrata to join. Uh, okay, my boss, um. But unfortunately, he had to jump on another call. So if you guys can share the recording after the meeting, that would be awesome, make sure it happens.
+
+[1:01] Michael Wilde:
+Yep, totally, yeah, thank you. You know, nobody really watches those things, but you know, we're more than happy to do that. And, uh, yeah, it'll probably be a transcript that you can copy and then put in your AI. So because are we reading anything anymore? I hope so, hopefully. Interesting books outside of work. Um, I think we're maybe waiting on one more. Am wild with resolve. AI Uh, there's Sean and Amanda on the sales engineering side, and I used to do that job as well. We're having a meeting. Yay, we're having a meeting. So it sounds like you guys agreed to come to a meeting to dig a little bit deeper about resolve. And maybe some intros and an idea like, what are you guys working on? What's of most interest? How can we make this one of the better hours of your day, or at least more fulfilling or knowledgeable? So you're meeting, you get to set the agenda, which is great.
+
+[2:01] Rajendra Upadhya:
+Perfect. Are we waiting for anyone else from your side?
+
+[2:07] Michael Wilde:
+Remy, Rahim, yeah. Actually, we've got a couple more coming in. We've got J.R.
+
+[2:13] Rajendra Upadhya:
+I saw Anmol on the meeting in what? I don't know if he's going to be joining.
+
+[2:16] Michael Wilde:
+Yeah, Anmol can make it. I'm on the sales side. I'm a former SE, former engineer. I've been at Resolve for over a year. Some of our folks are new, and then the normal account dude. I'm an account dude, that normal person he's, he's out sick today, so I'm subbing in. But like, we're all, we're all working on behalf of you guys, so I think we're okay. Yeah, um, if Remy jumps in, then that's fine, but we'll, we can roll, so anyway, all right, yeah, let's, let's do it. Uh, I did the intros, uh, Jerem, before we got in. I'm wild. Um, I kind of do a lot of things that resolve. And we've got, uh, Sean and Amanda, who are on the sales engineering side. We can, we can go in whatever direction. Always love to learn about what you guys are doing, why you even came here, what kind of stuff you're doing for AI, for coding and prod? And we can do demos, explore technical stuff, go as deep as you want, and, uh, not just read off of our website. So again, your meeting, Mike?
+
+[3:18] Rajendra Upadhya:
+Uh. The whole intent was to kind of, like, get to know more about the applications, like the Result.ai. So I would definitely love to kind of like, uh, jump into the demo. But we can go through the quick intro. Uh, I'm Raj, uh. I manage the digital reliability here at Macys, responsible for both brands Macys and Lumintels across all channels desktop, mobile, New, all along with some amount of security focused on the site. Along with me, I have my team here. Uh, Jayram, Srinivas and then Prathap, Um, you guys can kind of like, go ahead and introduce yourself, Hey, this is Jayaram.
+
+[4:00] Jeyaram Krishnasamy:
+And I report to Raj and I'm one of the senior manager managing the SRE space for the, you know, customer applications. Yeah, customer experience applications.
+
+[4:15] Srinivasa Rao Annamreddy:
+Hi, this screen was one more senior manager reporting to RaJ for leading SRE and security areas, along with transactional applications and so forth.
+
+[4:33] Prathap Reddy:
+Okay, myself, Pratha. I am a staff engineer reporting to Raj. We all work on the space for the, you know, our Macy's applications.
+
+[4:44] Michael Wilde:
+That's, that's, how are things going? What's good today? Everything must be good today because you guys are in a meeting.
+
+[4:54] Rajendra Upadhya:
+I mean, right now everything is mostly reactive, predictive, right? I mean, um, proactive, kind of like things, and then one other thing that this year we want to kind of, like, do more proactive. And uh, we've been trying few things with the Agentic, everyone is kind of jumping to Agentic space right now. Um, we have some partnership with Google, and I think that's one of the reason. Kind of, like, I bumped into this, uh, solution. Resolved. AI wanted to learn more about that? Um, so, yeah, we can. We can jump into the demo and then see what kind of capability that does Result provide. And then we can kind of like, see what would be the next steps if you need to.
+
+[5:30] Michael Wilde:
+Yeah, if you wouldn't mind, uh, if I have a couple questions for you guys, is that okay? Uh, because Sean's gonna do probably a great demo. And like, Um, uh, having a bit of understanding of Agentic stuff on your end, so like, what I like? We're obviously we're in the Agentic AI industry. We're huge adopters of Claude Code and Cursor. So on and also working through. A diverse set of people creating more features in code, trying to obviously deal with with reviews, okay, and then get more in into production. We have the luxury of being able to use resolve in a bunch of those places. Um, where are you, folks at? As far as AI generated code, is it making an impact with your engineers? You know, how's it going? What are you doing with it? Has your velocity gone up? Tell me a little bit more about that, because that's the corollary to what results.
+
+[6:26] Rajendra Upadhya:
+So we are moving towards AI, SDLC, and we are heavily using the Gemini code in terms of writing our code. So that is the journey that we are kind of like getting into in 2026. So I wouldn't say that we are almost there, but I mean, that's the beginning of the journey. And we are definitely using code assist for several of our initiatives in terms of creating the UI screens. Figma to code and all those things are actually there. So we are basically using that. And since we are churning a lot more code and we are going towards more of weekly release, and I would say pretty much daily. Now, because of multiple changes that we are pushing to production, we need to kind of, like, have some of these capabilities in our production environment.
+
+[7:18] Michael Wilde:
+Interesting. Do you have plans to build an AIS or an agent, or some agents?
+
+[7:26] Rajendra Upadhya:
+To do a lot of things as well, yes, and we already started that journey. So we are building something which is similar to the name that you have. We're building a specification called Cortisol, which is primarily built using Gemini Pro. And we are trying to integrate with Gemini Enterprise to kind of like, get a holistic view of all the the Gemini, I mean, applications hosted in Google Cloud. Along with that, we are trying to integrate with the some of the APM tools that we have, like Dynatrace. And also log and trace it through SentinelOne, which is our log aggregation tool. So there's some amount of work going on in that direction. So happy to know, like, learn more from you guys to see. like, I mean, if it's something that we should continue building, or if it's something to, kind of like, see what differentiator that you guys have here? And then see if it makes sense to bring a new tool in.
+
+[8:23] Michael Wilde:
+Okay, are you guys leading the get? Is that a direct project of yours, Raj? Building that agent or do you have another team?
+
+[8:31] Rajendra Upadhya:
+Okay, initiative across all portfolios, not just digital, but we have several different portfolios here, right? I mean, we have supply chain team, we have marketing team to kind of like, get the holistic view. So I think that's the direction that we're kind of taking.
+
+[8:48] Michael Wilde:
+yeah, I mean, some folks that we run into have like a VP of AI, and they're doing, they're doing AI focused stuff in the revenue side.
+
+[8:55] Rajendra Upadhya:
+And then, yeah, like, sometimes that person leads those we do have, I mean, AI, um, yeah, group. So so they are the ones who are gatekeepers to, kind of like, see what, what we should do and what we shouldn't do. Uh, but but that's again, uh, just to kind of like bring in the governance, right? They want to kind of like, go on and make sure that we're not kind of like overstepping on each other.
+
+[9:16] Michael Wilde:
+So yeah, um, so like, I would love to have for us to have the buy versus build discussion. Okay. And I would love to try to redirect your AI efforts, not towards building a resolution agent. Okay. But that's probably a bit, to be honest, it's probably a bit too much to do in this discussion. Because, really, and it's not a. You don't know what you're doing kind of thing. Um, I would say that, um, uh, what we can do is I'll give you an overview of Resolve. I got a couple of slides to help you understand what we're doing. And then Sean will give you a demo of how the product works. But in the past year, and I'll tell you one thing that I've seen in the past year and a half, talking to a ton of companies, it is. And and seeing what Resolve has built and what we actually have put together as a team. And in a week, we kind of joke, it's in a weekend, You can get to an aisre agent that integrates with a bunch of MCPs for different tooling from your observability vendors. And you can probably get to 70%. A weekend is like, it's kind of an overgeneralization. But I would say, in less than a month, you can have an agent that is making people feel good. Okay. When you do a POC with us, if you do. The things that you are not going to focus on is when it's right, okay, we'll do the POC, it'll do auto investigation. You'll get to do the stuff that you see in Sean, Sean's gonna be like, look at all this amazing stuff. It'll pick up an alert, diagnose it, you get to to collaborate with it. Yeah, it's got an amazing UX which most people aren't going to build. But you're going to judge me on the investigations that I didn't get right, okay? And in AI, we call that loss analysis if you do not have a team. Or if the strategic efforts of Macy's building an AIS re-agent does not focus on an EVAL platform and loss analysis, then the adoption of that tool. Because, man, I sell a tool that is like with it with 120 engineers, and even it is a challenging world. But the adoption of your internal efforts won't get as far as if you have an engineering team like ours working for you. Because people will like it for a minute and they'll abandon it, you won't ever know. So it's the 80 per the 70 to 100, that is tens of hours, hundreds of millions of dollars. And you know what? I would like to see people do the last thing on this, I'd like to see them go. Oh, okay, how can I take the awesome stuff, these command line things we do, these special lookups we have at Macy's. How can we turn them into MCPs so anything could fit them in? How do we take our run books and turn them into clawed skills, or just skills so that the LLMs can execute them? So note that if you're interested, we should have a discussion about maybe why not to build. Some people do it, but that's a little bit on that. Just grant me the grace to be able to have a discussion with you later because it is pretty involved. Okay. Yeah, go ahead. Questions? I'm going to just get a couple slides ready and then turn over to Sean.
+
+[12:49] Rajendra Upadhya:
+So you guys use Cloud as your LLM model behind the scenes?
+
+[12:54] Michael Wilde:
+Interesting. Why do you ask?
+
+[12:57] Rajendra Upadhya:
+No, I'm just curious, because we have investments with Google Gemini. So I don't know if it's something that you... I mean, you guys bring your LLM model to kind of learn from our... Infrastructure and things like that, or how is it actually like, kind of like structure? That's what I was.
+
+[13:13] Michael Wilde:
+What what a great question. Um, so, uh, I'll bring up. Let me share one visual, because, like some people get tired of me droning on it. Um, I think this here. So Claude, Uh, we use Claude as a coding tool. Like at Resolve, it's great. um, I, you know, a lot of u.s. sales people use Claude in our day. Where's my thing? um, resolve it itself, this. I don't think it's the best picture in the world, but whatever. Resolve is this software as a service platform that leverages foundation models for the tasks that we need, and we have a post-trained model for certain tasks. Let's say for time series, I think it's time series. We're going to leverage Gemini model. For certain things, we're going to leverage a Haiku model. Certain things will leverage OpenAI. And certain tasks we will use Opus. I think there's about 11 or 12 different cases in our product where we choose different models based on the research our engineers do. I mean, we have a lot of people, we just hired some of the team behind Lama at Meta, and we have a ton of deep mind people here. Resolve is a far reaching, expansive platform. You know what it does? Totally, it acts like an AISRE. It will absolutely debug stuff and you can do chat. There's so much more as far as how it can help people run AI in production. You actually don't even have to bring your own models. All that is a part of it.
+
+[14:50] Rajendra Upadhya:
+Okay.
+
+[14:51] Michael Wilde:
+The pricing model down the, you know, later, how does this price? It's basically, you're going to see two work actions today. You're going to see investigation. You're going to see chat. Each of those have a credit value. So I don't care what you implement. If you just want to chat all day, that has a cost. If you want to investigate all day, that has a cost. It's pretty easy, but here's the way to look at Resolve. It's a platform. It's job is a reason about your production. It learns about your production environment. It becomes something that a team can get awareness of what's going on, right? What people are doing, what alerts are being covered, intelligence and knowledge. It maps out your entire infra. So I forgot to ask if you guys are a kubernetes shop. Probably, right?
+
+[15:33] Rajendra Upadhya:
+Yeah.
+
+[15:33] Michael Wilde:
+Okay. Yeah. So, you know, I was one of the people that actually liked to be in SRE. Okay. I was at SRE for a while. I liked being on call, which means I hadn't been on call enough to hate it. Okay. Um, when when you hire a new engineer, they come with skills. Like, they're not fresh off the, you know, out of high school. They come with skills, but they need to understand what life is like at Macy's, what the infrared architecture is like, and how you debug things. Okay. So part of resolve will plug into Kubernetes. It will learn your entire infrastructure, keep it up to date underneath for the, you know, super geeky people in the room. It'll build a knowledge and entity graph, and it keeps it up to date. Why that's important? Because if you want to look at something last week, we need to know what pods and what namespaces were there last week. Okay? And then also, like, an architectural diagram helps the system like it would you figure out what's connected and where to go. And we'll build that from Kubernetes, and if you have APM tools and service maps, we'll build that as well. And then the job of resolve is to activate agents to behave like you, okay, or, you know, behave on behalf of you. So we're gonna see, we'll, we'll operate. Um, if you do a POC down the road, you do it right, you bring code, your infra tools, your observability tools, any knowledge you have, maybe you have a Jira or something like that, you bring them all in. Then you work with resolve to wire up knowledge. And you can ask questions. It'll reason. And it'll take your alerts. If you want it to take your alerts, it'll do that. The platform is super powerful. And these are the things that most people do. We got a lot of. There's a ton of great customers that resolve brands that you're probably familiar with. And I would say a lot of these folks are super easy to talk to at the point in time we need to talk to them. Okay, but the auto? Most of us come for automated alerts, triage and investigation. But in the course of, um, in the course of either dealing with an incident or alert, or just a bug you heard about, because not everything becomes a SEV1. Like asking the system and feeding it information like you do with some of your agents. To go and figure out what the problem is and maybe propose a fix. Resolve has a coding agent. You can even ask, Resolve, like, what happens if we're going to have, like, a news? What if we're going to have a massive sale this weekend? What's it going to be like during Christmas? How should we scale up? The more things you plug into it, the more powerful it is. And then, hey, you know, more than happy to intern at Macy's. When you become a resolve customer and go on call for you, I would just if you had resolve, I would just chat with it. I would learn about your whole infra, figure out who built what, figure out everything, and then you'd go nice. Try get out of here, but it really helps with onboarding as well. So, um, here's a green slide that says, Demo, okay, uh, because you can only listen to a bald dude talk so much. Sean could probably give a good demo, Uh, not meaning Sean won't give a good demo, but it's more like it should be a fairly representative demo. What we're doing? Happy to take questions. Uh, we can't show everything today because it's so comprehensive, but we'll try to get the meat of it. And then maybe some of this recording will be valuable. Um, and oh, before Sean jumps ahead, I talked a bunch, you talked a bunch. Um, right now, if the demo goes well, we probably have another meeting, right? Like, what, what? what would you think like? You know, yeah, what do you want to do?
+
+[19:15] Rajendra Upadhya:
+Yeah, definitely. I mean, we will have to have more conversation, I think that will be the thing, and then understand the pricing model that you guys have for reprise. And what are the things that we need to kind of like, do? Um, and then I'll probably have to, kind of, like, have a discussion with my VP to kind of like, see what would be the next steps. We definitely have to. I don't think you are, uh, onboarded, uh, within the Macy's, uh, um, vendors list. So we'll have to kind of go through that process, get you guys in for a POC and then we'll have to kind of evaluate. That will be the next step. Let's let's dive into the demo first, let's understand the need, and then, yeah, Yeah, sounds good.
+
+[19:51] Michael Wilde:
+Appreciate it. And take it away.
+
+[19:55] Sean Geary:
+Okay, excellent. So thanks a lot, Wild. So I guess before I jump in, I have a couple of questions for the team, because there's a lot of different ways. I can kind of jump into the demo, and I want to make sure I hit what's most important to you. And Wild kind of mentioned two of them. A is, you know, that Chatbot interface where we can kind of just interact with the system and kind of talk about it. The other one is really, you know, responding to alerts or dealing with investigations. Or we can also look at potential, starting with the integrations in terms of how do we put that all together? So, I guess what, what would resonate more? What's top of mind for the team right now?
+
+[20:28] Prathap Reddy:
+Probably that's, I mean, responding to the alerts, and, you know, perfect, all right.
+
+[20:36] Sean Geary:
+And now, if I'm correct, everyone here is SRE related, right? So basically, an alert comes in, um, how does that typically come in? is it coming across? Like, do you have, like, a Slack Team, or Slack Channel, or Team channel? Or what's that typically look like? When an alert comes and the team has to, has to respond?
+
+[20:56] Prathap Reddy:
+So we get it as an email, and then we also have a MOOC soft integration. Uh, so, um, yeah.
+
+[21:07] Sean Geary:
+The logs alert are like, everything is primarily to the emails is what I think, okay, so you get the email, and is the email that link you to to like the move, soft alert, consolidation, or. And then that's really kind of your starting point, yes, okay, and then so at that point you get the alert and then you make a determination. You know, potentially we need to create an incident or something along that lines, right? What would that look like is is that's handled within like a communication platform, or what do you typically do?
+
+[21:39] Srinivasa Rao Annamreddy:
+I think it's again a move soft will create the incident once it correlates.
+
+[21:44] Sean Geary:
+Okay, it's like, this ends up like a meeting that you all join and kind of figure that out.
+
+[21:49] Srinivasa Rao Annamreddy:
+No, no, It will create a service notification and we have a team to assess the priority. Okay. And based on that business impact priority, it will go via call or via resolution.
+
+[22:04] Sean Geary:
+Right. So there's no teams or slack channels that you guys deal with at all there?
+
+[22:10] Srinivasa Rao Annamreddy:
+You kind of jump right in.
+
+[22:11] Rajendra Upadhya:
+Right now, no, no, no, no, that is a bad action. I want to definitely kind of like. Integrate with teams is what we use for the communication here at Macy's, and I definitely want to kind of like get into the teams and provide this information. But right now we get alert from different sources like Sentinel One, Banner, Trace, Beat, Go, Thousand Eyes. Or that gets into MooC soft, the correlation happens in MooC soft, and then kind of like it creates one single incident.
+
+[22:36] Sean Geary:
+All right, so let's, if you guys are okay with this, let's kind of start. It's potentially kind of a future type scenario, right? Where you have that teams type thing where, you know, maybe there is, you know, you have a channel where alerts go to, and then potentially, you would spin up an incident channel that the team could join into. So if that's okay, let's kind of start there, and then we'll work our way into the product, which would probably be how, you know, you could probably start interacting with it today as you move that way. Does that sound acceptable? All right, great. All right, so let me share my screen. And, you know, obviously, if there's any questions, you know, throughout, please don't hesitate to ask them. But I'm going to start sharing my screen. And, you know, so right here, you know, I'm in Slack, you know, team, same type of situation. But basically, you know, we have a number of channels, and one of those channels happens to be monitoring from alerts. You may be one or many channels. And then, as the alerts come in, you know, I get a quick summary of what the actual alert is. And based on the integration, we resolved. We can actually start investigating the alert, potentially before you're even aware that it's there, such that when one of the engineers or one of the team members comes into that channel, you can actually see that the investigation is already underway. So it's not a matter of them coming in cold. They're able to come in and actually start to get some information about the alert. So, for example, right here, let's take a look at this right here. You know, we have a CPU utilization issue, and you can see that I actually already have some replies from Nizam. When I click on this, you'll start to see the information that we've started to gather based on our investigation and put forth to the engineer or the responder. To allow them to get context immediately. So they have an understanding of where we've gone already and then they can make a determination. Okay, where do we need to go? Um, if we look over here, you know, the first thing is a little bit of summary of what's actually happened. So in this case, you know, we've had an alert trigger, uh, in this case, we've actually seen that alert trigger seven times the last seven days. So it's not necessarily a one-off, maybe it's something for some reason that's being scheduled or something along that lines. We get an idea of what the impact is, you know, what's that blast radius? And this goes back to some of the stuff that Wild was talking about. In terms of our integrations, which we'll talk about shortly. because, you know, we're kind of tied in there. We can kind of see how different services are reacting to each other. So something happens over here, we know what else could potentially be affected. We start to provide information on the metrics that we found. We're pulling information from the observability, you know, from the logs, your traces, your spans, etc. And also have historical data. Right, so we're seeing this. Okay, this happens once a day, typically self-resolves in 30 or so minutes. Uh, the last time it happened was, uh, yes, two days ago, but I want this one, so yesterday, um. And then, based on this information, we determine a theory in terms of what actually happened. So in this case, we're basically saying, okay. There's a flag D configuration that changed, uh, which really spiked this, you know? Which actually caused this problem to happen because it enabled functionality that change the code base. That suddenly we started doing double MD5 hashing on 5.5 million rows. So that's really going to kind of, you know, spike the system, slow everything down. And then we start to provide information as to why did we come to that finding? So we're not just blindly saying, this is why. Here is kind of that, the citations, or the evidence behind that determination. So, you know, we can say, okay, well, yeah, We did verify that there was a configuration flag change and where that toggle happened. We can see that. It happened 1.4 seconds after that change, pretty good indication that that was the cause. But we want to also kind of dig a little bit deeper. Um, so we're actually going there and actually looking at the code base, so we're able to see, you know, what actually caused it to happen. Um, we can see, I have another member of my team interacting with it already, uh, and it also provides other information. And, as Wild just showed, right here is, I can actually start interacting with the system directly from Slack, directly from teams. As well as the UI, we're seeing momentarily. But you can start to query the system and say, okay, well, based on this information, now, give me a little more data behind it. Maybe I want to say, How do I fix this? Let's take the easy way out, maybe it has a solution for you. Um, and you know, we'll kind of let this chug. And while that's doing that, I want to take a quick pause here. What are your initial thoughts, or any questions or comments on? Kind of what we just walked through?
+
+[26:58] Rajendra Upadhya:
+Does it also give you the blast radius of how much impact this particular issue is actually causing in your ecosystem?
+
+[27:08] Sean Geary:
+Yeah, so I mean, as I mentioned, you know, based on some of the integrations we have, we do have an idea of how things are interrelated. And depending on how, you know, we talk about blast radius, right, So you have three services, and they may be firing different alerts and different logs as well. So we're going to try to correlate all that and see if we can pinpoint it back to the initial alert. So we do try to determine what that blast radius is based on those integrations that we have as well. You know, Ideally, we'd be able to provide everything, but you also have the ability to query as well to go beyond that. So if we don't necessarily have an idea, or maybe we don't show it here, you can kind of start to ask the system other information. So you can see, right here was the initial question. How often does it happen? Here's all the dates when it happened. So it gives you that concept of the pattern. And then now he's going back and actually kind of throw blame, figure out who actually, what made the change in the code. So you can go back and say why. Any other comments?
+
+[28:08] Jeyaram Krishnasamy:
+No, all right.
+
+[28:10] Sean Geary:
+So, you know, we've seen how we can interact here. Um, uh, and then we're gonna actually jump into the UX, right? So let's kind of say, okay, this is great. And you know, some organizations, they live in Slack, they live in teams, they never want to see a UI. Um, but you know, so we can. We want to make sure we kind of meet people where they're at. Um, so I'm going to kind of come back up here and say, well, okay, let's let's jump into this issue and let's actually jump into to the UI itself. So what I'm showing here really is kind of that same summary information just within our UI. This right-hand panel is where we provide some of the details and more of those details. So you can say, you know, what happened? And then here we start to actually bring in some of those citations, some of the evidence from those underlying systems. So you see the evidence behind the determination we made. So you can see right here, you know, that CPU utilization fired up and it kind of, you know, spiked. So we can kind of see that very easily. Let me talk about, you know, what the actual impact is. Going back to that blast radius. And I do have the ability to go deeper. So, for example, I could say, okay, if I could? Highlight this section right here, and you can see a pop up here. So a few things, it's going to give you some prompts of questions you may want to ask. I could actually comment, I can actually bring another member of the team in and say, hey, I'm noticing this, what are your thoughts? Or I could just kind of ask it my own question. So let me just, I'll just kind of ask this question. And you can see that that spins off here over the right hand panel. And we're kind of starting a side investigation. That can correlate back to that initial investigation, so it starts to give you more information and then I can continue to query that as well. And you know, there could be, you know, there could be multiple people from your team interacting here as well. So there's a concept of collaboration because, you know, everyone's not working by themselves, ideally, because you're all trying to solve the same problem. You know, maybe someone goes over here and looks at logs. Someone goes over here and looks at this. But ideally, you want to do that in a single environment. So the information that you find is immediately available to everybody else. So kind of a little tangent right there. But then we also go back down to kind of, you know, the actual root cause. You know, why are things actually changing? What actually happened? And then we go back to that evidence again. And each one of these little indications here are citations which actually go back into that underlying evidence that helped us make that determination. As to, here's why we think this is what we said, because of this information within the system itself. So I'll do a quick pause there and see if there's any comments.
+
+[30:31] Rajendra Upadhya:
+So, Sean, typically, when you close an incident with resolve, is there a way for us to kind of like? Take this information and update our ServiceNow incident ticket when we actually close the incident within ServiceNow. That way, all this information is actually kind of like, updated, and when we have the information, when we actually go to the audit.
+
+[30:51] Sean Geary:
+Right, so you're using ServiceNow as your record of source of record?
+
+[30:55] Rajendra Upadhya:
+Yeah.
+
+[30:56] Sean Geary:
+Yeah, so we do have an integration with ServiceNow and Wild, correct me if I'm wrong on this one, But you know, there is a way to basically have information kind of go back and forth between the two systems. So you can mark something as result, within result. Yeah.
+
+[31:10] Rajendra Upadhya:
+Okay.
+
+[31:12] Sean Geary:
+So while it's not jumping up, so I'm going to assume I'm correct there.
+
+[31:15] Michael Wilde:
+Yeah, sorry, my internet just cracked out. Yeah, you're spot on. Is that something you guys are hoping, like, if you were going to write back to ServiceNow, would you be doing it periodically as things happen? Or would you be writing like a postmortem or something?
+
+[31:30] Rajendra Upadhya:
+One of the challenge today is like, we have all the incidents within ServiceNow, but we don't have a good... Resolution nodes. So tomorrow, when we actually look at the incident, what happened, we don't have all the information logged in. That's always a challenge. So I was hoping that, I mean, with this, if you can, kind of like, update the tickets, I mean, if they're not the major incidents or the critical incidents, even then, I mean, we have this information documented, then we have a good system of record, right?
+
+[31:56] Michael Wilde:
+Yeah, you totally, absolutely. What we generally see is like, Resolve, it follows up. There are situations where you want resolve to write a PR or resolve to take action. It can, but we generally try to, like, um, we start out as read only. Okay? So we let folks decide when the system is going to reach out and take. Take human, take action for humans. We kind of call this human on the loop. But yeah, it's in, uh, in another POC that I was working on. We're doing two interesting things you might find, but they're all around trouble. Ticket So we'd pull the ticket, in this case, it was from Jira. uh, we'd pull the ticket from Jira. That was escalated to engineering. Use the context in that ticket. you saw Sean, use the context of an alert, but the context of that ticket. And then begin and resolve investigation. Engineer starts working through, and then the ability to write it back to Jira. So, um, seems like a great kind of workflow that I hope you guys will implement one day.
+
+[33:02] Sean Geary:
+Okay, great. Just a little bit look under the hood a little bit. On the left-hand side is basically the investigation panel. So you can actually see how we went along our thought process to determine where we went from there. You know, you can go a little bit deeper as well. You can start to see some of the other information. You know, there's a concept of knowledge. You know, as we mentioned, you think of this as a new engineer on the team, by default. He knows how to do a job, but he doesn't necessarily know how to do things within your environment. So you start to teach them. To provide them knowledge, provide them context or guidance. And that's where we kind of look at this concept of knowledge, which we'll look at momentarily. But this allows you to kind of track where it's going. And we're not doing this serially. We send agents off in different directions. So we're querying logs, querying the metrics, et cetera. Then we kind of come back together, and we kind of take all the information that's been received and kind of correlate it, which then ends up showing you the information over here on this side. All right. And I said, yeah, this. Think of this as an investigation, um, you know this, this goes into the investigation aspect, so the metric automatically, or the sorry the um, the alert automatically triggered an investigation. It went on its own. I could actually pull this out, I could actually do something very similar to an incident channel. So if you go and spin up a channel, you can invite, um, you know, invite, resolve into that channel. And then it's there to ask questions as well as interact depending on the need. So that's another potential view of that. The other one, which is is very critical a lot of times, is the concept of kind of, you know, that Chatbot interface, right? So a new engineer on the team, you know, how do I, how do I understand my system? You can walk around and talk to people, shoulder tapping, et cetera. But because we have all this information about the system, we also have the ability to provide answers to you as well. So, for example, I could quickly say, you know, describe, like a spell, you know, my checkout service. So in this case, this happens to be an e-commerce app. Hopefully you guys are familiar with something like that. But this would allow you the ability to say, you know, I'm new to the system. I may not necessarily know much about it at this point in time. So let me let me ask an expert. So in this case, resolve can go out there. Query all the systems, all the information we have, and then it's going to basically provide you some of that information. Um, very similar to ads in the middle of an incident, I can chat with the chat with the system to gather information, very, very similar. But this is kind of, you know, not necessarily tied to an alert, this is really just tied to something. Um, you know, ask your questions regarding you know what would happen if you know. When was the last time this was updated? Things like that because we do have the integrations with code, infrastructure and a lot of your kind of operational data as well.
+
+[35:43] Rajendra Upadhya:
+And this is not scanning through your architectural documents. It's basically building the real-time topology using your infrastructure knowledge, right?
+
+[35:50] Sean Geary:
+Yeah, it can be a combination, right? So we do have that real-time data gathering that we're doing based on the integration. So while this is kind of chugging along, let's actually take a quick look at that. So, you know, we have three primary things that we integrate with. So, first of all, kind of think of the observability or your operational data. So your logs, your metrics, your spans, et cetera. We have infrastructure. So this is how we determine how the different services communicate with each other. So kubernetes or DNS Tap, as well as other systems as well. Then my, decided to just go back on me. Third one would be code. This is where we kind of get some information in regards to, oh, someone did a commit here that allows, you know, that suddenly modified this. Or maybe you have, you know, run books and get, et cetera. We can do that. And we also have that chat interface we kind of spoke about earlier as well. As part of this, you know, we may have integrations that help feed our knowledge base for, you know, you can outline your architecture as well. And we use that information, along with the information that we can self-determine based on these integrations to understand the system, to provide that, you know, provide that context and that information that we have.
+
+[37:01] Rajendra Upadhya:
+So if I don't see an integration here, how soon can I mean resolve building? Like, I mean, let's assume like we use Sentinel One for log integration, right? I don't think you guys have an integration with Sentinel One here. It's mostly Splunk, right?
+
+[37:16] Jeyaram Krishnasamy:
+Yeah, there's a ton of integrations that are there.
+
+[37:21] Michael Wilde:
+You know, like, for us to build an integration, it's, I would say, on average, all the ones that I've seen because... I've been around it resolved for just about a year, which means all these integrations didn't exist. Then some of them did, and they got built as a result of working cut with customers. It wasn't really knock on wood. Don't take more than a week. But what I also see is the vendors and I'm trying to look this up. Sentinel One, the Central one, have an MCP, they do, they do have. Yeah, so like that would be the very first place now, you know, nerd level stuff. Not all MCPs are created equal. So if let's say we hook up resolve to the Sentinel-1 MCP and we're like, ah, they missed one of these APIS that we really should have available, we'll tend to build a first-party integration. I've built a couple myself, but MCPs are probably the best way to get started because they're already there. So Resolve can use them like you would if you hooked them up to Gemini or Claw.
+
+[38:29] Rajendra Upadhya:
+And do you also have integration with the business metrics? Let's say I want to kind of like, get some of the data from Adobe, or security data from Akamai or FullStory, all the session information. Can we actually take those information also as part of the investigation?
+
+[38:48] Michael Wilde:
+I would say, probably. You know, it's one of those things like, let's look at what integrations are available. I mean, in our resolve, we use PostHog. For the front end. And we're able to kind of, we bring that information in, and we're trying to, we are available to kind of help understand challenges with user experience. But I would say anything you can, anything you feel is necessary for part of a workflow, really, because it isn't always investigations. Integrating with Resolve is really not the biggest challenge. So I know some systems are. Especially when you're in a gentic coding company. We crank out things faster than we're even aware of. There's probably stuff that they invented yesterday that Sean and I don't even know. And it's quite amazing. So, yeah, probably won't be a blocker for you guys.
+
+[39:43] Sean Geary:
+Yeah. Any other questions? A couple of quick things I want to talk about. We talked about kind of the knowledge that we're gathering here and creating a few different ways that we want to look at that. Or kind of look at that. First thing, I want to get a kind of a knowledge graph, or think of it as a context graph. So this is something that basically we've created based on those. You know, based on those interactions or inter integrations that we have, so we're able to start to. You know, this is how we everybody answer questions about that blast radius, right? So we can quickly say, okay, well, you know, checkout is, you know, upstream and downstream from the front end, the DNS, Flag B, etc. Okay, well, what else is Flag D associated with? I go here and say, Okay, well, I got a lot going on with that because that's really how I'm changing. Number of configurations and then we pull down here, we're able to see other data so we can see configuration information we can. To deployment, you know, events services, I actually go in down into my actual deployment, you know, I start to get a little more information. So this is how we start to pull all that data together. That helps with that investigation to figure out, okay, well, why is this pod crashing? Or what is happening over here because of this specific pipe, a spike, and really all that starts to tie together. So this is kind of that self determined knowledge, based on that integration we have. The other thing we have is kind of that knowledge that, you know, is that same knowledge that you bring to a new new engineer on the team, right, the kind of the tribal knowledge. Stuff that maybe is in your head, but not necessarily written down, or potentially your runbooks. Um, so, you know, knowledge is, uh, segregated into a few different levels. First level would be the organization, and then maybe you have team specific knowledge, right? That everything the organization pertains everybody. But, you know, from this team, maybe they handle things a little bit differently, look at different logs, look at different dashboards. Um, so this is really where, um, you know, this all comes into play. And then with each one of these, we have information. So the Resolve MD think of it much like the Claude MD. You know, what is that kind of, you know, that guidance or that information that everybody would need to use? In this case, then we can break it down into specific documents. So maybe I have a a runbook or something that's specifically tailored to this type of incident or this type of flow. Uh, you know, all that information can be really provided here, and you also have the way to create skills. So I can say, you know, if there's something I do a lot, let me create a command to do it so I can kind of have it automatically do that. So, you know, those are all things that are possible. And I said, the knowledge that you provide to the system, plus the knowledge that it can gleam on its own, really allows us the ability to investigate the system. You know, on a whole, you know, is there an issue over here, issue over here and all that comes together? When those alerts fire, when those ends happen. Or, as we saw, when someone's just curious about something, let me try to make a determination of, you know, what's going on here. How is this related to that? When was the last time something changed. Comments No, this is good, good, good stuff.
+
+[42:46] Michael Wilde:
+A bunch of chats going on here, I'll see if I missed anything.
+
+[42:49] Sean Geary:
+No, you're good.
+
+[42:49] Rajendra Upadhya:
+Yeah, perfect, okay, um, some of the time. I mean, we have business callouts, which is typically not an incident in service now or an alert in any of our APM systems. So it could be promotions having an issue, or it could be the content issues. So is there a way for us to kind of scan through that to see that could be a potential issue and then kind of like, alert the team to start looking into that?
+
+[43:20] Michael Wilde:
+Hey Raj, what would be the thing that would cause you to notice that to happen?
+
+[43:24] Rajendra Upadhya:
+It's mostly business. I mean, typically we have content data issue. A lot of data setup issues, I mean, it's all done by the business team on a daily basis. I mean, we have new content going out to production, promotion changes, pricing changes. That happens all the time, and majority of the time. Um, issues of that sort of nature are the ones that are impacting the business. Uh, gets called out and sometimes it could be a promotion incorrectly set up and that's causing an issue on the site. And then we'll have to, kind of, like, take action.
+
+[43:58] Michael Wilde:
+So just trying to see you get, how do you get notified of it? Mostly is like, is, is there an alert? is there a downstream alert somewhere? No, that's the problem.
+
+[44:08] Rajendra Upadhya:
+I mean, that's that, I mean, because you have a new promotion, let's say, I mean, you're setting up a promotion for. Uh, what are the recent one that we had? Um, yeah, for Michael? Preview, yeah, preview, so a preview as a promotion and which is supposed to be working only on mobile. Um, but that was, uh, having a negative impact on the site. And we had to go back and either take the promotion out or make some modifications in production to kind of, like, make it work. So those kind of things actually come from business, and I'm trying to see, it's those things, they're the root cause.
+
+[44:45] Michael Wilde:
+Yeah, I I think the way we can, the other way is like, is there a way?
+
+[44:52] Srinivasa Rao Annamreddy:
+A key kind of validation can be done on the website based upon the new data kind.
+
+[45:00] Michael Wilde:
+Uh, tell me, tell me more about that. Like you can, it's okay, like, design your dream state. Because sometimes we might be able to go, you know what? Put this to this, this together and use this and we'll help you.
+
+[45:12] Srinivasa Rao Annamreddy:
+To compare the data sets, or the other way is, can we validate the website with the new data set? With the result? A kind like, Okay, what is the problem that's coming? Like double dipping or if or promotion? Not working with the current data. What we have and we have the website and data we have, we need to come up with. What are the place out of it.
+
+[45:46] Michael Wilde:
+Cool. I love this idea. So what tools, given that Resolve, think about resolve as superhuman, the super principal engineer that doesn't need a lunch. What things could we use? Again, we're designing a world that doesn't exist. But would I be using, you know, would I make? would you use, would you make some, if you knew before and after, would you make some queries in the database? Would you, I forget what you guys had for front-end, full story, right? Would you hit full story? What would be the things that you would try to do if you could automate them?
+
+[46:29] Srinivasa Rao Annamreddy:
+We have data if there is any double dipping happening for promotion use case. For content use case, Amen. Think, like, whether the links are working or not, okay, is it redirecting to right pages? Okay? So those kind of, uh, scenarios where human has to validate, right, we can't, uh, judge like this is correct, this is wrong until you validate the content.
+
+[47:01] Michael Wilde:
+Would you be just using your browser or a tool? Or, you know, it's do you have any? It'd be sound like you might have been full story, like, could use full story. Because that's hitting, that's doing.
+
+[47:11] Srinivasa Rao Annamreddy:
+The major thing is there won't be any error also. Okay, oh no, that's okay, right?
+
+[47:20] Michael Wilde:
+I would expect there to not be errors, right? But you know, uh, let's say, how would you know the before and after, right? There's something somewhere that says, Hey, the business team had filed a ticket, or they've made it.
+
+[47:36] Srinivasa Rao Annamreddy:
+Yeah, they filed the ticket. Like, it's showing wrong content.
+
+[47:39] Michael Wilde:
+Right. But before that, so how do you know they published anything?
+
+[47:48] Srinivasa Rao Annamreddy:
+Daily thing, right? Some banner will be there, and when you click on that banner, you'll reach out to a new page, Fob page or something, But that page is not correct, reconfigured. So that is something, it's configured to some URL, we don't, that's the wrong URL. That type of issues is one criteria.
+
+[48:13] Sean Geary:
+And how is that typically flagged? Customer complains or someone notices it?
+
+[48:17] Rajendra Upadhya:
+Business, yeah. Business Yeah. They would complain. And then we had to go back and review that setup and then figure out, OK, this is probably incorrectly set up by the business team. So we had to work with them. And those kind of investigations take time.
+
+[48:30] Michael Wilde:
+Yeah. So imagine I was a contractor that came in to work with you guys. What I would probably do is I would say, OK, first, how can I be aware that content was updated? Where would I learn about that? I might learn about that, maybe as a ServiceNow ticket, maybe there's a change in the content system, maybe there was a push. I'd go, how do I know that it happened? How can I view the before and after?
+
+[48:57] Srinivasa Rao Annamreddy:
+I don't know, maybe I have a I think maybe business may have that details like before data, Correct. But we may not... Have that data like how, what, it should be. Okay, so I got your point. How do we connect with the source data, right?
+
+[49:17] Michael Wilde:
+Uh, yeah, but here the the what, what, I'm gonna, I'm gonna show you something real quick. Um, what we have coming, I think in, I don't know. It's probably like, a day, uh, is the? Let's say, we all have to figure out how to demo this. But resolve has now, and this is, this is. This is also one of the things you would think of is like, why not to buy versus build? But we have the concept of long-running agents, we're scheduled agents, and these things can take action, and they can. If I open this up, this is our, this rocket, by the way, is our resolve to manage the resolve that Sean was using. OK, so resolve is like expanding itself into a platform. As we can see, I have an Org level agent, a team level agent and then personal agents. So what I might do is like, if I had resolve there, I take a weekend. Figure out what all the sources of data that I could wire into resolve. And then let's say, maybe every day, maybe every hour, or maybe at some point in time, let's say if I could hit full story or hit a Chrome browser MCP. Let's say, imagine I did that. And I wrote a prompt that said, Every hour, it's just. This is just a silly example, which you probably wouldn't do. But hey, every hour. Go back and hit the following pages and keep a record of it and tell me if anything has changed from the last time. Because these LLMs have the ability to understand the context of their session. And if I give resolve, things to investigate, there's a really good chance that. Even if I wanted this quasi real-time monitoring and I hadn't, and I hadn't thought of using resolve for something like you guys had put forth. But I think there's a picture that's not too far from being painted where you actually could have that. You don't necessarily need to interview the business people. Okay. If you can find out when they're going to make a change, then you at least know, hey, change is coming, then you could probably detect it. So, I mean, it's a stretch.
+
+[51:33] Jeyaram Krishnasamy:
+It's a good point. I think we should be able to.
+
+[51:36] Rajendra Upadhya:
+Yeah, we know that. Then there is a publish. Yeah, happens with ADM. So I think we can take that timestamp and then kind of like, yeah.
+
+[51:46] Michael Wilde:
+John MUELLER, Lots of database queries, too. I'd do a bunch of things. I wouldn't just rely on just the web page, right? I'd see the performance. I would, you know, this is the thing, like, hey, sit down and think about it. I mean, and probably, it's probably doable. Like, if it wasn't, I'd be like, well, that's not a roadmap. So anyways, interesting thing to try.
+
+[52:07] Sean Geary:
+Before we come off.
+
+[52:08] Michael Wilde:
+Quest Two questions for you. Uh, I I think I know what the next steps are. Um, what'd you like most about what you saw? And then are you interested in meeting again?
+
+[52:19] Rajendra Upadhya:
+Yeah, I think overall, uh, I'm impressed with the platform. Uh, I just had to kind of, like, have the conversation with my VP to kind of like, figure out the next step and then bring you guys in. Because I'm sure he's gonna definitely be interested in looking at this platform too before we make a call of, uh, studying about POC or or not. So I'm going to probably follow up with you. Um, or I don't know if Remy is gonna kind of like, reach out to me or not. But, uh, I think that's going to be something that will really take it forward.
+
+[52:46] Michael Wilde:
+Yeah, cool, um, well, like. Poll the audience What'd you like most? Just curiously, everybody, because you know, we're releasing stuff every day. You can say just me if you want, only one thing.
+
+[53:07] Srinivasa Rao Annamreddy:
+Yeah, yeah, definitely.
+
+[53:08] Prathap Reddy:
+Like the detailed information, uh, what it is showing, like, you know, um, all the information, all the checks, like where it is going and validating. And also explaining that, hey, this is what I'm saying, because here is what I found, right? So all those, uh, things, uh, which definitely makes sense. But I also observed, like the fear, the like, you know, where you can deviate. What I am assuming is if the solution, what it is providing is something, what we feel like we are not confident, can we ask it to take a different look of the system? Yeah, right. I'm assuming that's the whole idea. So that gives, like the entire, you know, ability for ourselves also to see, to take a different look.
+
+[54:05] Michael Wilde:
+Love it. Go ahead. JEREM Yeah, I mean, the in the chat, right?
+
+[54:13] Jeyaram Krishnasamy:
+The prompting, uh, giving bunch of like options to, let's say he showed right coding, like a specific, uh, about the incident. Give me the more, the logs, traces and all those things, right? So, yeah, love that.
+
+[54:28] Michael Wilde:
+Anybody else. Sreeni I know you're dying to say something was awesome.
+
+[54:32] Srinivasa Rao Annamreddy:
+Yeah, two things like that one is once we get the connector integrated with Resolve AI, is there a time like it? Give some learning on that, or will it be trained based upon the instance that happens? You may need to explain why it's there. For example, if I give my APM to like Dynatrace, this is my workspace where we try out or do all the system metrics. It will, your reservoir will try me. Or if I ask, like, what is the checkout response time, we need query directly during that time.
+
+[55:23] Michael Wilde:
+Yeah. Resolve, here's a little LLM background, is the prompts that you do, when you interact with Gemini or Claude, or maybe even if you use Claude or something like that, and use skills, right? The prompt that you do matter of fact. maybe you save some of your prompts. Okay, if you save a prompt, then you're, you know, let's say you have a head start. The integrations in resolve and in most LLMs have a prompt book that's built in. Okay, so inside of the code there's a general under, you know, all these systems have a lot of prompts. There's a general understanding of what DynaTrace is for and how it should approach Dynatrace. Like, I just updated. I just updated the Splunk one. So that, hey, because I used to work at Splunk for 12 years, I was a sales engineer. I update the prompt book so that all of the agents that everyone has gets better and it knows how to use it properly. Resolve knows how to use Dynatrace, but the other thing Resolve doesn't know is how you want to use Dynatrace. When Sean was showing the team knowledge section, maybe you have a run book that says, make sure you log into Dynatrace, hit this dashboard, go check this out, and then run over here and run the shell command. The knowledge that you, if you had a runbook, you put it in Resolve. In the team section, so let's say I'm on the platform, let's say I'm on the front-end team. The front-end team, people are able to say, these are my alerts, these are my dashboards that I look at, and then resolve. Will actually use the knowledge that you put in, the things that you've selected on what we're supposed to look at. And then either when you prompt it or when it kicks off an investigation, it's going to use all of that, right? It's not limited by all of that, but it's like, you onboard me and you're like, Wild, look at the following things. That's what we tell resolve to do. You don't have to tell Wild to know how to use DynaTrace because I do. But you have to tell me where to go, what to look and and what part of the infers. So, yeah, the answer is like, it's yes, but you really always want a yes. And because nothing is really as simple as, oh yeah, check other than do we work with, you know, a web browser? So anyways, we have one minute, so you need to get out of here early. Uh, I see next steps, send recording, we probably need an NDA, we need to see, schedule a follow up. We know nothing about your business. We got to do that. But appreciate the time, hope you guys have a really good rest of the day. And, uh, respond to any of us, and we'll we'll get you the info you need.
+
+[58:16] Sean Geary:
+Sounds good, thanks everyone, thank you.

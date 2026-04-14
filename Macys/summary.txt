@@ -1,0 +1,28 @@
+================================================================================
+CUSTOMER: Macys
+================================================================================
+
+--------------------------------------------------------------------------------
+Date: 2026-04-10
+Call: Resolve AI — Technical Intro
+--------------------------------------------------------------------------------
+Attendees:
+  Resolve: Michael Wilde, Sean Geary (SE), Amanda Nichols (shadowing)
+  Macy's:  Rajendra Upadhya, Jeyaram Krishnasamy, Srinivasa Rao Annamreddy,
+           Prathap Reddy
+
+Summary:
+  First technical introduction call with Macy's engineering team. Resolve demoed their
+  multi-agent AI platform, showing how it integrates with observability tools (Dynatrace,
+  Splunk, AWS) to automatically investigate alerts and surface root causes. The Macy's
+  team asked detailed technical questions about integrations, timezone handling, and how
+  Resolve's prompt-based learning works for custom team runbooks and dashboards. Macy's
+  boss Subrata could not attend and requested the recording be shared. Next steps include
+  NDA, a follow-up call, and Resolve learning more about Macy's specific use cases.
+
+Action Items:
+  - Resolve to share call recording with Rajendra (for Subrata who missed the call)
+  - Schedule NDA signing between Resolve and Macy's
+  - Schedule follow-up discovery call to understand Macy's specific environment and use cases
+  - Resolve to prepare integration details for Dynatrace and Splunk for follow-up
+

@@ -1,0 +1,30 @@
+================================================================================
+CUSTOMER: Restaurant365
+================================================================================
+
+--------------------------------------------------------------------------------
+Date: 2026-04-13
+Call: Restaurant365 / Resolve AI: POC Planning
+--------------------------------------------------------------------------------
+Attendees:
+  Resolve:       Lauren Phillips (AE), Prodan Statev (SE), Amanda Nichols (shadowing)
+  Restaurant365: Lauren Harden, Anthony Yi (Sr. Infrastructure Engineer),
+                 Sunuk Kim (DevOps/SRE Lead), Danny (SRE)
+
+Summary:
+  POC planning session introducing Resolve's multi-agent AI platform to Restaurant365's
+  DevOps and SRE team, most of whom had not seen a prior demo. Prodan walked through a
+  live demo showing how Resolve auto-investigates Slack alerts, traces root causes across
+  metrics, logs, and code, and can generate PRs from findings. The team identified the
+  payroll incident from the prior week — which took 3+ days to resolve across multiple
+  rabbit holes — as a strong POC test case. Restaurant365 flagged that legal review and
+  a DPA (beyond just an NDA) will be required before connecting production systems.
+
+Action Items:
+  - LP to send meeting recap and recording to Restaurant365 team
+  - LP to schedule follow-up (Wednesday or next week) via Slack to finalize POC plan
+  - Restaurant365 to identify application team and specific alerts to use in POC
+    (payroll team is the leading candidate)
+  - Legal teams to align on DPA requirements before systems are connected
+  - Restaurant365 to confirm end-of-April POC decision timeline with stakeholders
+
